@@ -1,0 +1,143 @@
+GIT(Version control system)
+=========================================
+
+Distributed version control
+coordinates work between multiple developers
+who made what changes and when
+Revert back at any time
+LOcal & Remote Repo
+
+concepts of GIT
+===============
+keep track of code history
+Takes "snapshots" of your files
+you decide when to take a snapshot by making a "commit"
+you can visit any snapshot at any time
+you can stage files before commiitting
+
+BASIC COMMANDS
+------------------
+git init //Intialize local git Repository
+git add <file> //Add files to index
+git status //check status of working tree
+git commit //commit changes in index
+git push //push to Remote Repository
+git pull //pull latest from Remote Repository
+git clone //clone Repository into A new Directory
+
+
+INSTALL GIT
+==================
+LINUX(Debian)
+sudo at-get install git
+
+
+
+git config --global user.name 'thirumala'
+git config --global user.email 'thiru237@gmail.com'
+
+git add index.html
+git status
+git rm --cached index.html
+
+git add .
+
+git status
+
+modify index.html and type git status
+
+git add .
+
+git status
+
+git commit
+
+git status
+
+Another files app.js
+write some thing
+nano app.js
+
+git add .
+git commit -m 'change app.js'
+
+clear
+
+touch .gitignore
+
+touch log.txt
+
+git add .
+
+git status
+
+to create folders
+dev1
+
+dev2
+
+under dev1 and dev2 to create files like app1.js,app2.js
+git add .
+git status
+to create branches
+
+git branch login
+
+git status
+
+git commit -m 'another change'
+
+git checkout login (change branch)
+
+touch login.html
+write something
+git add .
+git commit -m 'login html'
+clear
+git checkout master (change branch)
+git merge login
+
+
+======GitHUb login========
+
+create new repository
+
+description (your like name)
+under select public
+
+create repository
+
+ssh
+
+if your something write no need of ssh readme.md steps
+
+directly type
+git remote add origin https url
+
+git remote(check branch)
+
+git push -u orgin master
+
+Asking github login
+
+
+refresh github check
+
+Touch Readme.md
+write something
+
+git add .
+git commit -m "add readme'
+
+refresh not avaliable
+git push
+-------------------------
+Already hub files to download
+go for clone and download
+copy url
+
+new folder create ----->open git bashrc
+
+git clone paste url
+
+git pull
